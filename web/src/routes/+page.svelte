@@ -1,7 +1,12 @@
-<div class="flex justify-center items-center h-full gap-8 p-16">
+<script>
+    import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+</script>
+
+
+<div class="flex justify-center items-center h-1/2 gap-8 p-16">
     <div class="flex flex-col gap-8 w-1/2">
         <div class="ml-8"><img class="w-24" src="favicon.png" alt="Library caster's icon" /></div>
-        <strong class="text-6xl">Library Caster</strong>
+        <h1 class="h1 text-6xl">Library Caster</h1>
         <span class="text-2xl">Manage your library like never before! Never forget your best memories with books thnaks to this innovative library managment service.</span>
         <div class="flex gap-8 m-4">
             <button type="button" class="btn variant-filled-primary">
@@ -23,4 +28,76 @@
         </div>
     </div>
     <img class="w-1/2 rounded-md" src="placeholder.jpeg" alt="Placeholder">
+</div>
+
+
+<div class="card flex flex-col ml-16 mr-16 gap-4 p-4 text-xl">
+    <h2 class="h2 text-2xl">Here are all most frequently asked questions</h2>
+    <hr />
+    <Accordion>
+        <AccordionItem open>
+            <svelte:fragment slot="lead">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>                      
+            </svelte:fragment>
+            <svelte:fragment slot="summary">Is the serveice free?</svelte:fragment>
+            <svelte:fragment slot="content">
+                Yes, our service is completly free for basic usage for everone. 
+                If you want to upgarade to the next level, feel free to contact our sales department.
+            </svelte:fragment>
+        </AccordionItem>
+        <AccordionItem>
+            <svelte:fragment slot="lead">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>                  
+            </svelte:fragment>
+            <svelte:fragment slot="summary">How much libraries can I mange for free?</svelte:fragment>
+            <svelte:fragment slot="content">You can manage up to 3 libraries without any need to pay 😄.</svelte:fragment>
+        </AccordionItem>
+        <AccordionItem>
+            <svelte:fragment slot="lead">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>                                   
+            </svelte:fragment>
+            <svelte:fragment slot="summary">How to add new books to my libary?</svelte:fragment>
+            <svelte:fragment slot="content">
+                To add new books to your library you have 2 options. 
+                Either you can add them from the admin dashboard in the browser, or scan them from your smartphone app.
+            </svelte:fragment>
+        </AccordionItem>
+    </Accordion>
+</div>
+
+<div class="m-16">
+    <h2 class="h2">We have been trusted by many clients.</h2>
+    <div class="flex mt-8 justify-evenly">
+        <div class="card w-96 flex flex-col justify-between p-4">
+            <blockquote class="blockquote">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iste suscipit ea laborum sequi eos! Temporibus vitae ex, 
+                reprehenderit maxime ratione, et neque harum, dignissimos hic assumenda nobis magni optio!
+            </blockquote>
+            <div class="h-4"></div>
+            <strong>CEO of the Longscope™ Inc.</strong>
+        </div>
+        <div class="card w-96 flex flex-col justify-between p-4">
+            <blockquote class="blockquote">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iste suscipit ea laborum sequi eos! Temporibus vitae ex, 
+                reprehenderit maxime ratione, et neque harum, dignissimos hic assumenda nobis magni optio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea eligendi maxime expedita debitis, cupiditate eius blanditiis ut sunt. Doloremque ipsa pariatur doloribus. Cumque repudiandae consectetur quam laboriosam numquam consequuntur.
+            </blockquote>
+            <div class="h-4"></div>
+            <div>- CEO of the Longscope™ Inc.</div>
+        </div>
+        <div class="card w-96 flex flex-col justify-between p-4">
+            <blockquote class="blockquote">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iste suscipit ea laborum sequi eos! Temporibus vitae ex, 
+                reprehenderit maxime ratione, et neque harum, dignissimos hic assumenda nobis magni optio!
+            </blockquote>
+            <div class="h-4"></div>
+            <div>- CEO of the Longscope™ Inc.</div>
+        </div>
+    </div>
 </div>
