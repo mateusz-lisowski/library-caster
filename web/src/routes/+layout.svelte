@@ -2,8 +2,6 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 
-	import { time } from 'console';
-
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -105,7 +103,7 @@
 				</div>
 			</div>
 			<div class="flex justify-center">
-				<p>Copyright © - All right reserved by Deepsight INC.</p>
+				<p>Copyright © {new Date().getFullYear()} - All right reserved by Deepsight INC.</p>
 			</div>
 		</footer>
 	</svelte:fragment>
