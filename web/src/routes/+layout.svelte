@@ -14,7 +14,14 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<div class="flex">
+					<a href="/" class="btn-icon bg-initial">
+						<img src="favicon.png" alt="Library caster's icon" />
+					</a>
+					<a href="/" class="btn bg-initial">
+						<strong class="text-2xl">Library Caster</strong>
+					</a>
+				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -22,7 +29,7 @@
 					href="https://discord.gg/EXqV7W8MtY"
 					target="_blank"
 					rel="noreferrer"
-				>
+				> 
 					Discord
 				</a>
 				<a
