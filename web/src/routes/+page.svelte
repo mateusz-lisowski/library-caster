@@ -31,6 +31,9 @@
     <img class="w-1/2 rounded-md" src="placeholder.jpeg" alt="Placeholder">
 </div>
 
+<div class="m-16"><hr /></div>
+
+
 <div class="m-16">
     <h2 class="h2">We have been trusted by many clients.</h2>
     <div class="grid grid-cols-3 gap-8 m-8">
@@ -53,6 +56,8 @@
         />
     </div>
 </div>
+
+<div class="m-16"><hr /></div>
 
 <div class="m-16">
     <div class="card flex flex-col gap-4 p-4 text-xl">
@@ -94,5 +99,4 @@
             </AccordionItem>
         </Accordion>
     </div>
-    
 </div>
