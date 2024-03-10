@@ -48,6 +48,6 @@
         </div>
     </div>
     <div class="flex justify-center">
-        <p>Copyright © {new Date().getFullYear()} - All right reserved by Deepsight INC.</p>
+        <p>Copyright © {new Date().getFullYear()} - All right reserved by Library Caster CO.</p>
     </div>
 </footer>
